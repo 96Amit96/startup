@@ -20,7 +20,7 @@ export default function LoginPage() {
     const onLogin = async () => {
         try {
             setLoading(true);
-            const response = await axios.post("http://127.0.0.1:8000/api/v1/auth/login", user);
+            const response = await axios.post("http://192.168.56.38:8002/api/v1/auth/login", user);
             console.log(response.data)
             toast.success("Login Success");
             router.push("/profile");

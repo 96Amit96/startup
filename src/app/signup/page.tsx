@@ -25,7 +25,7 @@ export default function SignupPage() {
 
         try {
             setLoading(true);
-            const response = await axios.post("http://127.0.0.1:8000/api/v1/auth/signup", user);
+            const response = await axios.post("http://192.168.56.38:8002/api/v1/auth/signup", user);
             console.log(response.data)
             router.push("/login");
             
